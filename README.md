@@ -1,4 +1,4 @@
-# NewCoder
+# NowCoder
 剑指Offer 66题刷题笔记
 ## 数组
 
