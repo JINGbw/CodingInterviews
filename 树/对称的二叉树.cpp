@@ -10,7 +10,8 @@ public:
             return true;
         if(p1==nullptr||p2==nullptr||p1->val!=p2->val)
             return false; 
-        return isbalancecore(p1->left,p2->right)&&isbalancecore(p1->right,p2->left) ;
+        //return isbalancecore(p1->left,p2->right)&&isbalancecore(p1->right,p2->left) ;
+        return isbalancecore(p1->left,p2->right);
     }
  
 };
