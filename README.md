@@ -387,11 +387,12 @@ delete []visited ;
 11. 绝对值函数 abs（left-right）;
 12. 用vector建堆
 ```
-vector make_heap(res.begin(), res.end(),greater<int>()//建堆 最小堆 
+vector make_heap(res.begin(), res.end(),greater<int>()//建堆 最小堆 如果是最大堆就是 less<int>() 
+
 //压入
-res.push_back(res.begin(), res.end())
-push_heap()(压入之后排序）
+res.push_back(res.begin(), res.end())//将新元素放在堆最后
+push_heap()//(压入之后排序）调整堆
 //弹出
-pop_heap(res.begin(), res.end()) 弹出之前排序
-res.pop_back()
+pop_heap(res.begin(), res.end()) //弹出之前排序 //将最小元素放在堆最后 
+res.pop_back() //删除堆中最后的元素（最小的元素）
 ```
