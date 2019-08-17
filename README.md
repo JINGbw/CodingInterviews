@@ -1,4 +1,4 @@
-[TOC]
+ 
 
 # NowCoder
 剑指Offer 66题刷题笔记
@@ -9,7 +9,7 @@
 
 ### 数组查找 
 
-1. [二维数组的查找](https://github.com/JINGbw/NewCoder/blob/master/%E6%95%B0%E7%BB%84/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E6%9F%A5%E6%89%BE.cpp)
+#### 1. [二维数组的查找](https://github.com/JINGbw/NewCoder/blob/master/%E6%95%B0%E7%BB%84/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E6%9F%A5%E6%89%BE.cpp)
 
 - 题目：二维数组从左到右依次变大，从上到下依次变大，找到目标数字
 - 思路：法一：利用二分法找到该数所在的行，再用二分法找到这个数。法二：从左下角或者右上角开始找，可以根据Target与当前元素的大小关系来缩小查找区间
