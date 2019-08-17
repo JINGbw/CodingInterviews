@@ -1,4 +1,4 @@
-[toc]
+[TOC]
 
 # NowCoder
 剑指Offer 66题刷题笔记
