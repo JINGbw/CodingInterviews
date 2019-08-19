@@ -454,6 +454,8 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 ### 2. [机器人的运动范围]
 
+### 字符串的排列，全排列
+### 二叉树中和为某一值的路径
 
 ## 其他 
 
