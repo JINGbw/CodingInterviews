@@ -2,8 +2,9 @@
 
 # NowCoder
 剑指Offer 66题刷题笔记
+ 
 
-Table of Contents
+目录
 =================
 
    * [NowCoder]()
@@ -98,6 +99,7 @@ Table of Contents
             * [8. 丑数]()
       * [c  ]()
 
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 ## 数组
 
