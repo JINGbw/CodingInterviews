@@ -17,6 +17,8 @@ public:
     return;
     }
     for(int j = i;j < a.size();j++){ 
+     //如果字符串中后面的字符和第一个字符不一样，就递归
+     //但是第一个字符也参与递归 所以 i== j 也可以进入循环 
         if (i==j||a[i]!=a[j]){ 
             swap(a[i],a[j]); 
             core(res,a,i+1);
