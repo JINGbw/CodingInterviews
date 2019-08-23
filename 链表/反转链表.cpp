@@ -8,7 +8,7 @@ public:
          ListNode* pre = nullptr;
         while(cur){
             next = cur->next;
-            //循环终止条件：
+            
             if(!next){
                 newhead = cur; //注意这里不能退出，因为还要连接上之前的节点
             }
