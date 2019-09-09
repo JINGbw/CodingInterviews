@@ -1,5 +1,4 @@
 
- 
 Table of Contents
 =================
 
@@ -45,6 +44,8 @@ Table of Contents
             * [10. 把字符串转换成整数(Atoi)](#10-把字符串转换成整数atoi)
             * [11. 复杂链表的复制](#11-复杂链表的复制)
       * [树](#树)
+      * [Trie树](#trie树)
+      * [哈夫曼树](#哈夫曼树)
          * [二叉树遍历，打印](#二叉树遍历打印)
             * [1. 按之字形顺序打印二叉树](#1-按之字形顺序打印二叉树)
             * [2. 把二叉树打印成多行（二叉树的层次遍历）](#2-把二叉树打印成多行二叉树的层次遍历)
@@ -102,6 +103,7 @@ Table of Contents
       * [c  ](#c)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+
 
 ****
 # NowCoder
