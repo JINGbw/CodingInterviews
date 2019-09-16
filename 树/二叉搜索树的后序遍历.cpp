@@ -47,3 +47,32 @@ public:
 // 　　　　若Prev是Curr的左儿子，则将Curr的右儿子压入栈；
 // 　　　　否则Prev是Curr的右儿子，访问Curr;
  
+ void _EndOrder(Node* root)//后续遍历打印(左，右，根)
+    {
+        Node* cur=root;//当前结点
+        Node* prev=NULL;//上一次打印的结点
+        stack<Node*>  s;
+        while (cur || !s.empty())//只要当前结点或者栈中还有元素，则该二叉树一定还没有打印完
+        {
+             while (cur)//一直找到最左结点
+             {
+                 s.push(cur);
+                 cur=cur->_left;
+             }//while循环出来cur指向最左结点的做结点为NULL
+
+             Node* top=s.top();//取出最左结点
+
+             //如果结点的右孩子为空，或者右孩子已经被打印，则可以打印本结点
+             if (top->_right==NULL || top->_right==prev)
+             {
+                 cout<<top->_data<<"->";
+                 s.pop();
+                 prev=top;//将prev更新为已经打印过的结点
+             }
+             //如果结点的右孩子不为空，且还没有被访问，则将cur更新为右孩子，继续while循环，
+             else
+             {
+                 cur=top->_right;
+             }           
+        }   
+    } 
