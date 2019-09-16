@@ -8,32 +8,42 @@ public:
 // 4. 递归右子树 (.begin()+i , .end()-1)
  // 注意：数组的.end() 指的是最后一个元素后面一个位置 
  
- bool VerifySquenceOfBST(vector<int> sequence) {
-        if( sequence.size() ==0)
-            return false;
-        if( sequence.size() ==1)
-            return true;
-        int n = sequence.size()-1;  
-        int i = 0;
-        for( ;i<n ;i++) {
-            if(sequence[i] >sequence[n])
-                break;
-        }
-        //根节点只有左子树的情况 
-        if(i == n )
-          return true;
-        int j = i ;
-        for(; j<n ; j++){
-            if(sequence[j]< sequence[n] )
-                return false;
-        }
-        bool  left = true;
-        if (i> 0 )
-            left =  VerifySquenceOfBST(vector<int>(sequence.begin() ,  sequence.begin()+ i));
-         bool  right = true;
-        if (i> 0 )
-             right=  VerifySquenceOfBST(vector<int>(sequence.begin()+ i  ,  sequence.end()-1));
+//  bool VerifySquenceOfBST(vector<int> sequence) {
+//         if( sequence.size() ==0)
+//             return false;
+//         if( sequence.size() ==1)
+//             return true;
+//         int n = sequence.size()-1;  
+//         int i = 0;
+//         for( ;i<n ;i++) {
+//             if(sequence[i] >sequence[n])
+//                 break;
+//         }
+//         //根节点只有左子树的情况 
+//         if(i == n )
+//           return true;
+//         int j = i ;
+//         for(; j<n ; j++){
+//             if(sequence[j]< sequence[n] )
+//                 return false;
+//         }
+//         bool  left = true;
+//         if (i> 0 )
+//             left =  VerifySquenceOfBST(vector<int>(sequence.begin() ,  sequence.begin()+ i));
+//          bool  right = true;
+//         if (i> 0 )
+//              right=  VerifySquenceOfBST(vector<int>(sequence.begin()+ i  ,  sequence.end()-1));
       
-        return (right&&left);
-    }
-};
+//         return (right&&left);
+//     }
+// };
+ 
+ 
+//  　思路二：
+
+// 　　　　要访问一个节点的条件上一个访问的节点是右儿子。我们可以增加一个变量Prev来判断当前节点Curr的上一个节点与它的关系来执行相应的操作。
+
+// 　　　　若Prev为空(Curr节点是根节点)或者Prev是Curr的父节点，将Curr节点的左孩子和右孩子分别压入栈；
+// 　　　　若Prev是Curr的左儿子，则将Curr的右儿子压入栈；
+// 　　　　否则Prev是Curr的右儿子，访问Curr;
+ 
